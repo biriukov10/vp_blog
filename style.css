@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #001A0D;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  left: -9999999px;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1114px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.language {
+  margin-right: 1.5rem;
+  font-size: 14px;
+  border: 3px solid #0B301E;
+  backdrop-filter: blur(50px);
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.listItem {
+  margin-right: 1.5rem;
+  width: 24px;
+  height: 24px;
+}
+
+.listItem:last-child { 
+  margin-right: 0;
+}
+
+.listLink {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.listLink object {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: .3s;
+  pointer-events: none;
+  filter: grayscale(100%);
+}
+
+.listLink:hover object {
+  filter: grayscale(0) drop-shadow(0 0 0.75rem #D4903B);
+}
+
+.line {
+  background: #0B301E;
+  height: 3px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1340px;
+  border-radius: 5px;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  padding-top: 6rem;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  padding: 6rem;
+  border-radius: 25px;
+  height: 600px;
+}
+
+.status {
+  font-size: 14px;
+  margin-bottom: 4rem;
+}
+
+.status img {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  line-height: 1;
+}
+
+.cardTitle {
+  font-size: 72px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.cardText {
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+.cardLink {
+  display: flex;
+  align-items: center;
+  color: #D4903B;
+}
+
+.cardLink img {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.cardTop {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cardBottom {
+  position: absolute;
+  right: 40px;
+  top: 0;
+}
+
+.cardImage img {
+  height: 600px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.footer {
+  background: #00130A;
+  padding: 2rem 0;
+}
+
+.footerList {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.footerLogo {
+  display: inline-block;
+}
+
+.footerList, .footerLogo {
+  margin-left: auto;
+}
+
+.about {
+  position: relative;
+  z-index: 1;
+}
+
+.aboutSubTitle {
+  opacity: .5;
+  margin-bottom: 2rem;
+}
+
+.aboutTitle {
+  font-size: 40px;
+  max-width: 780px;
+  margin-bottom: 4rem;
+}
+
+.aboutImage {
+  display: inline-block;
+  margin-right: 4.5rem;
+}
+
+.aboutWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutVolume {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutVolumeWrap {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+
+.aboutVolumeWrap:last-child {
+  margin-right: 0;
+}
+
+.aboutVolumeCount {
+  font-size: 40px;
+  color: #D4903B;
+}
+
+.aboutVolumeText {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: .7;
+}
+
+.aboutInfoText {
+  line-height: 1.7;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.aboutInfoText:last-child {
+  margin-bottom: 3rem;
+}
+
+.view {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  padding: 5rem 6rem;
+  justify-content: space-between;
+  background: #001A0D;
+  border-radius: 25px;
+  margin-bottom: 4rem;
+}
+
+.viewWrap iframe {
+  width: 400px;
+  height: 300px;
+  border-radius: 25px;
+}
+
+.viewInfo {
+  max-width: 420px;
+}
+
+.viewTitle {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+.viewText {
+  line-height: 1.5;
+  margin-bottom: 5rem;
+}
+
+.viewLink {
+  display: inline-block;
+  color: #D4903B;
+  padding: 1rem 2rem;
+  border: 3px solid #D4903B;
+  border-radius: 25px;
+}
+
+.assets {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 6rem;
+}
+
+.assetsInfo {
+  max-width: 470px;
+}
+
+.topBg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+}
+
+.bottomBg {
+  position: absolute;
+  left: -45px;
+  bottom: 118px;
+  width: 90%;
+  z-index: 0;
+}
+
+.assetsInfoText {
+  line-height: 1.5;
+}
+
+.assetsInfoTitle {
+  text-transform: uppercase;
+  opacity: .5;
+  margin-bottom: 2rem;
+}
+.assetsItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0 2.5rem;
+  border-bottom: 1px solid #484A53;
+}
+
+.assetsItem a {
+  font-size: 24px;
+  color: #FFFFFF;
+  max-width: 500px;
+  font-weight: 400;
+}
+
+.assetsItem img {
+  cursor: pointer;
+}
+
+.assetsItem:first-child {
+  padding-top: 0;
+}
+
+.assetsItem:last-child {
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 2rem 1rem;
+  }
+
+  .logo {
+    width: 6.5rem;
+  }
+
+  .hero {
+    padding-top: 2rem;
+  }
+
+  .assetsInfo {
+    margin-bottom: 2.5rem;
+  }
+
+  .assetsItem {
+    padding-bottom: 1.5rem;
+  }
+
+  .assets {
+    flex-direction: column;
+    padding: 1rem 1rem 3rem;
+  }
+
+  .cardTop, .cardBottom {
+    height: 50%;
+    top: 50%;
+  }
+
+  .footerList, .footerLogo {
+    margin: 0;
+  }
+
+  .about {
+    padding: 4rem 1rem 1rem;
+  }
+
+  .aboutWrap {
+    flex-direction: column;
+  }
+
+  .aboutSubTitle {
+    margin-bottom: 1rem;
+  }
+
+  .aboutTitle {
+    font-size: 28px;
+    margin-bottom: 3rem;
+  }
+
+  .topBg, .bottomBg {
+    width: 100%;
+  }
+
+  .aboutImage {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .cardText {
+    margin-bottom: 2rem;
+  }
+
+  .cardImage img {
+    height: 300px;
+    top: auto;
+    bottom: 0;
+    left: 0;
+  }
+
+  .aboutVolumeWrap {
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .aboutVolumeText {
+    text-align: center;
+  }
+
+  .viewWrap iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .footerLogo {
+    margin-left: auto;
+  }
+
+  .status {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .view {
+    flex-direction: column;
+    padding: 3rem 1rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .viewInfo {
+    margin-bottom: 4rem;
+  }
+  
+  .viewTitle {
+    font-size: 28px;
+  }
+
+  .viewText {
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .cardTitle {
+    font-size: 38px;
+  }
+
+  .language {
+    margin-right: .5rem;
+    padding: .5rem;
+  }
+
+  .listItem {
+    margin-right: .5rem;
+  }
+}
